@@ -19,7 +19,10 @@
     </nav>
     <div class="menu" id="menu">
       <i class="far fa-times-circle close" id="close-btn"></i>
-        <?php wp_nav_menu( array( 'container_class' => 'menu', 'theme_location' =>   'primary' ) ); ?>
+        
+
+        <?php wp_nav_menu( array( 'container' => 'ul','menu_class' => '', 'theme_location' =>   'primary' ) ); ?>
+
       <div class="icons">
         <a href="#"><i class="fab fa-facebook-square"></i></a>
         <a href="#"><i class="fab fa-twitter-square"></i></a>
@@ -37,7 +40,7 @@
       </video>
     </div>
     <div class="content">
-      <h1>Industrious</h1>
+      <h1>Construction</h1>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, ipsa.</p>
     </div>
   </header>

@@ -26,11 +26,11 @@
         <a href="#"><i class="fab fa-linkedin"></i></a>
         <a href="#"><i class="fab fa-instagram-square"></i></a>
       </div>
-    </div>
+    </div>        
     
     <div class="img"></div>
     <div class="content">
-      <h1>Blog</h1>
+      <h1>About us</h1>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, ipsa.</p>
     </div>
   </header>
