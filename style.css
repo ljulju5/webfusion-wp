@@ -1592,7 +1592,7 @@ CONTACT
 **************/
 /* line 1421, scss/style.scss */
 .contact {
-  background-image: linear-gradient(rgba(35, 44, 51, 0.8), rgba(35, 44, 51, 0.95)), url(../img/man.jpg);
+  background-image: linear-gradient(rgba(35, 44, 51, 0.8), rgba(35, 44, 51, 0.95)), url(./img/man.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 200px 0;
@@ -1726,7 +1726,7 @@ CONTACT
 /*********** map *************/
 /* line 1544, scss/style.scss */
 .map {
-  background-image: linear-gradient(to right, rgba(206, 27, 40, 0.5), rgba(17, 17, 17, 0.5)), url(../img/map.jpg);
+  background-image: linear-gradient(to right, rgba(206, 27, 40, 0.5), rgba(17, 17, 17, 0.5)), url(./img/map.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2025,4 +2025,74 @@ PRODUCT-SINGLE
 .product-page .container aside .widget ul li a:hover {
   text-shadow: 2px 2px 5px rgba(17, 17, 17, 0.5);
   transition: 0.3s ease all;
+}
+
+/***********
+Contact form
+***********/
+/* line 1844, scss/style.scss */
+.contact .container article:last-child {
+  flex: 0 0 50%;
+}
+
+/* line 1848, scss/style.scss */
+.contact .container article:last-child form input {
+  flex: 0 0 100%;
+  padding: 10px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+/* line 1855, scss/style.scss */
+.contact .container article:last-child form textarea {
+  flex: 0 0 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 1861, scss/style.scss */
+.happyforms-styles h3.happyforms-form__title {
+  display: none;
+}
+
+/* line 1865, scss/style.scss */
+.map .column .contact-region .contact-email article {
+  padding: 10px 0;
+}
+
+@media (max-width: 900px) {
+  /* line 1870, scss/style.scss */
+  .map .column .contact-region .contact-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* line 1877, scss/style.scss */
+  .map .column .contact-region .contact-email h3 {
+    text-align: center !important;
+    display: inline-block !important;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 1884, scss/style.scss */
+  .contact .container article:first-child {
+    flex: 0 0 100% !important;
+  }
+
+  /* line 1888, scss/style.scss */
+  .contact .container article:last-child {
+    flex: 0 0 100% !important;
+  }
+
+  /* line 1892, scss/style.scss */
+  .contact .container article:last-child form div input {
+    flex: 0 0 100% !important;
+  }
+
+  /* line 1896, scss/style.scss */
+  .contact .container article:last-child form div input[type="submit"] {
+    flex: 0 0 32% !important;
+  }
 }
