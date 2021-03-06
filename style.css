@@ -1696,10 +1696,10 @@ CONTACT
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-}
+} 
 /* line 1413, scss/style.scss */
-.contact .container article:last-child form input {
-  flex: 0 0 48%;
+.contact .container article:last-child form  input {
+  flex: 0 0 30%;
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -2026,3 +2026,126 @@ PRODUCT-SINGLE
   text-shadow: 2px 2px 5px rgba(17, 17, 17, 0.5);
   transition: 0.3s ease all;
 }
+
+
+
+
+
+
+
+
+/***********
+MY STYLE
+***********/
+
+
+.contact .container article:last-child {
+ flex: 0 0 50%;
+}
+
+
+
+
+
+
+
+
+
+.contact .container article:last-child form input {
+  flex: 0 0 100%;
+  padding: 10px;
+  margin:0;
+  margin-bottom: 20px;
+  
+}
+
+.contact .container article:last-child form textarea {
+  flex: 0 0 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+.happyforms-styles h3.happyforms-form__title {
+	
+	display:none;
+}
+
+/**/
+
+
+
+
+
+
+
+
+
+
+.map .column .contact-region .contact-email article {
+	
+	padding: 10px 0;
+	
+}
+
+@media(max-width:900px) {      
+	
+	
+
+
+
+.map .column .contact-region .contact-email {
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ justify-content:center;
+	
+ 
+}
+	
+
+	
+.map .column .contact-region .contact-email h3 {
+text-align:center!important;
+display:inline-block!important;
+}
+	
+	
+	
+	
+} 
+
+@media (max-width: 1024px) {
+	
+	
+	
+	.contact .container article:first-child {
+    flex: 0 0  100%!important;
+  }
+	
+	.contact .container article:last-child {
+    flex: 0 0  100%!important;
+  }
+	
+	.contact .container article:last-child form div input {
+    flex: 0 0  100%!important;
+  }
+	
+	.contact .container article:last-child form div input[type="submit"] {
+    flex: 0 0  32%!important;
+  }
+	
+	
+  
+}
+
+
+
+
+
+
+

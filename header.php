@@ -30,7 +30,7 @@
     
     <div class="img"></div>
     <div class="content">
-      <h1>Blog</h1>
+      <h1><?php the_title(); ?></h1>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, ipsa.</p>
     </div>
   </header>
