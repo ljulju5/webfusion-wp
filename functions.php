@@ -34,6 +34,42 @@ function sidebar() {
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
+	
+	
+	
+	
+	
+	
+		register_sidebar( array( 
+	
+	'name'=>'Adress',
+	'id'=>'adress',
+	 'before_widget' => '<div class="contact-adress">',
+    'after_widget' => '</div>',
+     'before_title' => '<h3>',
+     'after_title' => '</h3>'
+		
+	
+	
+	
+	));
+	
+		register_sidebar( array( 
+	
+	'name'=>'Email',
+	'id'=>'email',
+	 'before_widget' => '<div class="contact-email">',
+    'after_widget' => '</div>',
+     'before_title' => '<h3>',
+     'after_title' => '</h3>'
+		
+	
+	
+	
+	));
+	
+	
+
 }
 add_action('widgets_init', 'sidebar');
 
