@@ -12,7 +12,7 @@ add_action('after_setup_theme', 'wf_theme_support');
 
 // Load External and Internal CSS and Fonts (FontAwesome)
 function wf_theme_styles() {
-    wp_enqueue_style( 'font-awesome-free', '//use.fontawesome.com/releases/v5.2.0/css/all.css' );
+    wp_enqueue_style( 'font-awesome-free', '//use.fontawesome.com/releases/v5.7.0/css/all.css' );
     wp_enqueue_style('style_css', get_template_directory_uri() . '/style.css');
 }
 add_action('wp_enqueue_scripts', 'wf_theme_styles');
@@ -34,6 +34,22 @@ function sidebar() {
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
+	register_sidebar( array( 	
+        'name'=>'Adress',
+        'id'=>'adress',
+        'before_widget' => '<div class="contact-adress">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'	
+	));	
+	register_sidebar( array( 	
+        'name'=>'Email',
+        'id'=>'email',
+        'before_widget' => '<div class="contact-email">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'	
+	));
 }
 add_action('widgets_init', 'sidebar');
 
